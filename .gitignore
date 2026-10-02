@@ -104,3 +104,26 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+
+# ==========================================
+# Firebase
+# ==========================================
+# Firebase SDK 로컬 빌드 및 캐시
+/Assets/Firebase/
+/Assets/Plugins/Android/Firebase/
+/Assets/Plugins/iOS/Firebase/
+
+# Firebase 서비스 계정 키 및 자동 생성 설정 파일 (보안 및 환경 독립성)
+google-services.json
+GoogleService-Info.plist
+*.json.meta
+*.plist.meta
+
+# Firebase 가보 및 로컬 로그/캐시
+.firebase/
+firebase-debug.log
+firebase-debug.*.log
+
+# 에셋폴더
+ImportAssets
