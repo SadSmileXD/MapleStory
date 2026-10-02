@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "323687620291",
+    "firebase_url": "https://maplestory-43919-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "maplestory-43919",
+    "storage_bucket": "maplestory-43919.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323687620291:android:d93c52cf43cbba897ecc76",
+        "android_client_info": {
+          "package_name": "com.maple.sadsmile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "323687620291-idjct7c5eh3chij9dfjhurh07e0qa0ed.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACn3qFlUbYEGn3GJ6-YBIRdTkFTzmZmfY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "323687620291-idjct7c5eh3chij9dfjhurh07e0qa0ed.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -124,6 +124,8 @@ GoogleService-Info.plist
 .firebase/
 firebase-debug.log
 firebase-debug.*.log
-
+google-services-PC.json
+external-dependency-manager_version-1.2.189_manifest.txt
+ 
 # 에셋폴더
 ImportAssets

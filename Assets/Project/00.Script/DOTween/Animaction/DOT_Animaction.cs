@@ -3,8 +3,8 @@ using UnityEngine.UI;
 
 public class DOT_Animaction : MonoBehaviour
 {
-    [SerializeField]private Context m_Context;
-    [SerializeField]private DOT_Ani m_DOT_Ani;
+    [SerializeField] private Context m_Context;
+    [SerializeField] private DOT_Ani m_DOT_Ani;
 
     private Image targetImage;
     void Start()
@@ -13,6 +13,5 @@ public class DOT_Animaction : MonoBehaviour
         m_DOT_Ani.Init(m_Context, targetImage);
         m_DOT_Ani.ONDOTweenAni();
     }
-
-   
 }
+  
