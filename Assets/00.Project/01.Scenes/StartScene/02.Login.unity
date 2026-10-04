@@ -223,9 +223,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4851c6e3fe0311f4a8ae5bd1c377cbc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoogleTokenFetcher
-  webClientId: 878124330201-oium3de2jdnmllr86ofj965bo3dpsk1s.apps.googleusercontent.com
-  webClientSecret: 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
+  webClientId: 
+  webClientSecret: 
   m_btn: {fileID: 1963651341}
+  loadingPanel: {fileID: 0}
+  loadingText: {fileID: 0}
 --- !u!4 &1130599702
 Transform:
   m_ObjectHideFlags: 0
