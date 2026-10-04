@@ -44,7 +44,7 @@ public class DOT_intro_ani: DOT_Ani
         crossfadeSequence.OnComplete(() =>
         {
             // 이동할 씬 이름 또는 인덱스 지정
-            SceneManager.LoadScene("02_SelectChannel");
+            SceneManager.LoadScene(1);
             
         });
     }
