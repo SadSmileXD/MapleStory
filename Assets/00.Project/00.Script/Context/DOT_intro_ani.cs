@@ -1,7 +1,8 @@
-﻿using UnityEngine;
-using DG.Tweening;
-using UnityEngine.UI;
+﻿using DG.Tweening;
+using Unity.VectorGraphics;
+using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 [CreateAssetMenu(fileName = "DOT_Intro_Data", menuName = "Data/DOT_Intro_Data")]
 public class DOT_intro_ani: DOT_Ani
 {
@@ -43,9 +44,10 @@ public class DOT_intro_ani: DOT_Ani
         }
         crossfadeSequence.OnComplete(() =>
         {
-            // 이동할 씬 이름 또는 인덱스 지정
             SceneManager.LoadScene(1);
-            
+
+
+
         });
     }
 }

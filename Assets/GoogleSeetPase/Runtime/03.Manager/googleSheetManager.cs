@@ -1,30 +1,18 @@
-﻿#if UNITY_EDITOR
+﻿
 using NUnit.Framework;
 using UnityEngine;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-
+#if UNITY_EDITOR
 using UnityEditor;
-public class googleSheetManager : MonoBehaviour
+#endif
+public class googleSheetManager : Singleton<googleSheetManager>
 {
     public List<BaseDataSO> m_Listdata = new List<BaseDataSO>();
-
-    private void AutoSetting()
-    {
-        m_Listdata.Clear();
-        var datas = Resources.LoadAll<BaseDataSO>("SO");
-        m_Listdata.AddRange(datas);
-
-#if UNITY_EDITOR
-        EditorUtility.SetDirty(this);
-        AssetDatabase.SaveAssets();
-        AssetDatabase.Refresh();
-#endif
-    }
-
+  
     public async void DataLoad()
     {
-        AutoSetting();
+        
         List<Task> tasks = new List<Task>();
         foreach (var item in m_Listdata)
         {
@@ -59,6 +47,7 @@ public class googleSheetManager : MonoBehaviour
         return null;
     }
 }
+#if UNITY_EDITOR
 [CustomEditor(typeof(googleSheetManager))]
 public class MyDataControllerEditor : Editor
 {

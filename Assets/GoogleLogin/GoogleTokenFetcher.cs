@@ -22,24 +22,20 @@ public class GoogleTokenFetcher : MonoBehaviour
     [Tooltip("로그인 버튼")]
     public Button m_btn;
 
-    [Tooltip("로그인 진행 중 띄울 로딩 UI 패널 (예: Canvas 내의 Panel)")]
-    [SerializeField] private GameObject loadingPanel;
-
-    [Tooltip("로딩 텍스트 (선택 사항)")]
-    [SerializeField] private Text loadingText;
+ 
 
     private const int LocalPort = 7123;
     private FirebaseAuth auth;
-
+   
     private void Start()
     {
+        var keydata = googleSheetManager.Instance.GetClassData<SecurityKey>();
+        webClientId = keydata.FindById("0").key;
+        webClientSecret = keydata.FindById("1").key;
         auth = FirebaseAuth.DefaultInstance;
 
         // 시작 시 로딩 UI 비활성화
-        if (loadingPanel != null)
-        {
-            loadingPanel.SetActive(false);
-        }
+      
 
         if (m_btn != null)
         {
@@ -50,8 +46,8 @@ public class GoogleTokenFetcher : MonoBehaviour
     [ContextMenu("Get Google Token & Firebase Auth Test")]
     public async void GetGoogleToken()
     {
-        // 1. 로딩 UI 활성화 및 버튼 비활성화 (중복 클릭 방지)
-        SetLoadingUI(true, "웹 브라우저에서 구글 로그인을 진행해 주세요...");
+       
+      
 
         Debug.Log("1. 구글 로그인 웹 브라우저를 엽니다...");
 
@@ -60,14 +56,14 @@ public class GoogleTokenFetcher : MonoBehaviour
         if (tokenData != null && !string.IsNullOrEmpty(tokenData.id_token))
         {
             Debug.Log("<color=green><b>[구글 토큰 발급 성공!]</b></color>");
-            SetLoadingUI(true, "인증 성공! 계정 정보 확인 중...");
+        
 
             await SignInWithFirebaseAsync(tokenData.id_token, tokenData.access_token);
         }
         else
         {
             Debug.LogError("구글 토큰 발급 실패");
-            SetLoadingUI(false); // 실패 시 로딩 UI 끄기
+        
         }
     }
 
@@ -215,30 +211,11 @@ public class GoogleTokenFetcher : MonoBehaviour
         catch (Exception ex)
         {
             Debug.LogError($"[Firebase 로그인 실패] {ex.Message}");
-            SetLoadingUI(false); // 실패 시 로딩 패널 끄기
+          
         }
     }
 
-    /// <summary>
-    /// 로딩 UI 패널 및 안내 문구 제어
-    /// </summary>
-    private void SetLoadingUI(bool isActive, string message = "")
-    {
-        if (loadingPanel != null)
-        {
-            loadingPanel.SetActive(isActive);
-        }
-
-        if (loadingText != null && !string.IsNullOrEmpty(message))
-        {
-            loadingText.text = message;
-        }
-
-        if (m_btn != null)
-        {
-            m_btn.interactable = !isActive; // 로딩 중에는 로그인 버튼 비활성화
-        }
-    }
+   
 
     [Serializable]
     public class TokenResponse
