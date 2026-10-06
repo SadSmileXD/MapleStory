@@ -129,3 +129,6 @@ external-dependency-manager_version-1.2.189_manifest.txt
  
 # 에셋폴더
 ImportAssets
+
+# 빌드 파일
+Build
