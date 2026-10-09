@@ -14,7 +14,9 @@ public class Basefirestore: ScriptableObject
     private firestoreContext context;
     [SerializeField]private string typeofName;//저장할 데이터 타입을 문자열로 저장
     DocumentReference docRef;
-    private Dictionary<string, PropertyInfo[]> propertyInfoCache = new();  
+    private Dictionary<string, PropertyInfo[]> propertyInfoCache = new();
+
+    private CollectionReference m_current_World_Collection;
     public bool TypesEqual<T>()
     {
         return typeof(T).Name == typeofName;
@@ -23,10 +25,20 @@ public class Basefirestore: ScriptableObject
     public virtual void init(firestoreContext context)
     {
         this.context = context;
-        SetPath();
+       
     }
 
-     
+    public virtual void VisitAgain(firestoreContext context)
+    {
+        this.context = context;
+
+        var worldname = (context.world != null) ? context.world : "NULL";
+        var uid = (context.auth.CurrentUser != null) ? context.auth.CurrentUser.UserId : "NULL";
+
+        m_current_World_Collection = context.firestore.Collection("유저들").Document(uid).Collection(worldname);
+        
+    }
+
     protected virtual void SetPath()
     {
         if(Paths.Length % 2 != 0)
@@ -164,9 +176,14 @@ public struct firestoreContext
     public FirebaseFirestore firestore;
     public FirebaseAuth auth;
 
-    public firestoreContext(FirebaseFirestore firestore, FirebaseAuth auth)
+    public string world;
+    public string Charaterid;
+
+    public firestoreContext(FirebaseFirestore firestore, FirebaseAuth auth,string world,string characterId)
     {
         this.firestore = firestore;
         this.auth = auth;
+        this.world = world;
+        this.Charaterid = characterId;
     }
 }

@@ -20,6 +20,10 @@ public class firestoreManager : Singleton<firestoreManager>
     private Dictionary<string , Basefirestore> firestoreDictionary=new();
     private Queue<Action> actionQueue = new Queue<Action>();
     private readonly SemaphoreSlim semaphore = new SemaphoreSlim(1, 1);
+
+    public string m_SelectWorldName = null;
+    public string m_SelectCharacterid=null;
+
     override protected void Awake()
     {
         base.Awake();
@@ -40,7 +44,7 @@ public class firestoreManager : Singleton<firestoreManager>
                 firestore = FirebaseFirestore.DefaultInstance;
                 Debug.Log("[Firebase] 성공적으로 초기화되었습니다.");
 
-                init_basefirestore();
+                
 
 
             }
@@ -55,9 +59,12 @@ public class firestoreManager : Singleton<firestoreManager>
     {
         foreach (var basefirestore in basefirestores)
         {
-            basefirestore.init(new firestoreContext(firestore, auth));
+            basefirestore.init(new firestoreContext(firestore, auth,null,null));
         }
     }
+    public void SetWorldName(string value) => this.m_SelectWorldName = value;
+
+    public void SetCharacterId(string value) => this.m_SelectCharacterid = value;
 
     private async void Push(Action action)
     {
