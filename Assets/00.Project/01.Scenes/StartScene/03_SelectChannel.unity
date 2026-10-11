@@ -210,6 +210,9 @@ MonoBehaviour:
   m_hoverImage: {fileID: 21300000, guid: 059105c2ebf041845b45e5655a46feb0, type: 3}
   m_exitImage: {fileID: 21300000, guid: 3865c0c989ab2b043bc7b35085b43a8b, type: 3}
   m_clickImage: {fileID: 21300000, guid: 21294bb0249390e4890d1990865ab922, type: 3}
+  m_worldName: 
+  MS_hover_clip: {fileID: 8300000, guid: a18e07ebe3b875a44bc4652a7c83b5bb, type: 3}
+  MS_click_clip: {fileID: 8300000, guid: 38fcca9b08408f7489393580aec9ecf4, type: 3}
 --- !u!1 &288003195
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,6 +304,9 @@ MonoBehaviour:
   m_hoverImage: {fileID: 21300000, guid: 97d73d86f5feaaf40a3e20b3d72f44dd, type: 3}
   m_exitImage: {fileID: 21300000, guid: 7faa55b1d7efac84c9f57285f6eb8561, type: 3}
   m_clickImage: {fileID: 21300000, guid: 93937878e5e1aa14094ad2f4c395579a, type: 3}
+  m_worldName: 
+  MS_hover_clip: {fileID: 8300000, guid: a18e07ebe3b875a44bc4652a7c83b5bb, type: 3}
+  MS_click_clip: {fileID: 8300000, guid: 38fcca9b08408f7489393580aec9ecf4, type: 3}
 --- !u!1 &351781268
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,6 +398,9 @@ MonoBehaviour:
   m_hoverImage: {fileID: 21300000, guid: 9dab6fb8a477f404da4c1e38f3552da9, type: 3}
   m_exitImage: {fileID: 21300000, guid: cf1997d641cd01a40b6ce4c31581d41c, type: 3}
   m_clickImage: {fileID: 21300000, guid: 5808072f1d101ff48ae34d5b4e5663eb, type: 3}
+  m_worldName: 
+  MS_hover_clip: {fileID: 8300000, guid: a18e07ebe3b875a44bc4652a7c83b5bb, type: 3}
+  MS_click_clip: {fileID: 8300000, guid: 38fcca9b08408f7489393580aec9ecf4, type: 3}
 --- !u!1 &460715816
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,6 +492,9 @@ MonoBehaviour:
   m_hoverImage: {fileID: 21300000, guid: 57d87ad4c12c74e488004f360f0c7eed, type: 3}
   m_exitImage: {fileID: 21300000, guid: d645a9b2478850d48848d433304d8596, type: 3}
   m_clickImage: {fileID: 21300000, guid: 1b23fee05ecdf9542aeb1a38cb61fe54, type: 3}
+  m_worldName: 
+  MS_hover_clip: {fileID: 8300000, guid: a18e07ebe3b875a44bc4652a7c83b5bb, type: 3}
+  MS_click_clip: {fileID: 8300000, guid: 38fcca9b08408f7489393580aec9ecf4, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -747,6 +759,9 @@ MonoBehaviour:
   m_hoverImage: {fileID: 21300000, guid: 03db2aa67b1a0b84c817681d8516aa38, type: 3}
   m_exitImage: {fileID: 21300000, guid: d49f5d0a507433e409f1d7fc32b11e08, type: 3}
   m_clickImage: {fileID: 21300000, guid: 6146a623dfb656f40bbe03618bc701c8, type: 3}
+  m_worldName: 
+  MS_hover_clip: {fileID: 8300000, guid: a18e07ebe3b875a44bc4652a7c83b5bb, type: 3}
+  MS_click_clip: {fileID: 8300000, guid: 38fcca9b08408f7489393580aec9ecf4, type: 3}
 --- !u!1 &546289813
 GameObject:
   m_ObjectHideFlags: 0
@@ -838,6 +853,9 @@ MonoBehaviour:
   m_hoverImage: {fileID: 21300000, guid: 89bbf2af9301902409697281a4400dc8, type: 3}
   m_exitImage: {fileID: 21300000, guid: d360ca122d0667d4495280b42372e301, type: 3}
   m_clickImage: {fileID: 21300000, guid: a0ede43b86efff047a5845e1fa9d9cb8, type: 3}
+  m_worldName: 
+  MS_hover_clip: {fileID: 8300000, guid: a18e07ebe3b875a44bc4652a7c83b5bb, type: 3}
+  MS_click_clip: {fileID: 8300000, guid: 38fcca9b08408f7489393580aec9ecf4, type: 3}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,135 +935,6 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &662082757
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 662082759}
-  - component: {fileID: 662082758}
-  m_Layer: 0
-  m_Name: BackGround_Sound
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!82 &662082758
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 662082757}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 2a6899eccc0ffb34d8f316bcd2652045, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!4 &662082759
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 662082757}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1753, y: 552.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1221,6 +1110,9 @@ MonoBehaviour:
   m_hoverImage: {fileID: 21300000, guid: d3c241e8c8ff24543be8fcae5aa542d0, type: 3}
   m_exitImage: {fileID: 21300000, guid: dbe57c21ced39ef4b8c51ddeb3f4ba82, type: 3}
   m_clickImage: {fileID: 21300000, guid: b10c746ba149041499729613a5b411b5, type: 3}
+  m_worldName: 
+  MS_hover_clip: {fileID: 8300000, guid: a18e07ebe3b875a44bc4652a7c83b5bb, type: 3}
+  MS_click_clip: {fileID: 8300000, guid: 38fcca9b08408f7489393580aec9ecf4, type: 3}
 --- !u!1 &942413792
 GameObject:
   m_ObjectHideFlags: 0
@@ -1312,6 +1204,9 @@ MonoBehaviour:
   m_hoverImage: {fileID: 21300000, guid: 8dfd14b927da15d49bc1b2bad041a2c3, type: 3}
   m_exitImage: {fileID: 21300000, guid: 4e27e2944d85e7540b596946bec4fa6a, type: 3}
   m_clickImage: {fileID: 21300000, guid: d201b192a63272d4bae290df7d705bec, type: 3}
+  m_worldName: 
+  MS_hover_clip: {fileID: 8300000, guid: a18e07ebe3b875a44bc4652a7c83b5bb, type: 3}
+  MS_click_clip: {fileID: 8300000, guid: 38fcca9b08408f7489393580aec9ecf4, type: 3}
 --- !u!1 &1036941742
 GameObject:
   m_ObjectHideFlags: 0
@@ -1478,6 +1373,9 @@ MonoBehaviour:
   m_hoverImage: {fileID: 21300000, guid: 61a8f04751b8e334bb861f14d9739ef7, type: 3}
   m_exitImage: {fileID: 21300000, guid: a3a1009e808b79343a06c2967a55e044, type: 3}
   m_clickImage: {fileID: 21300000, guid: 656cd1dc02ff0a145a480f74abd47769, type: 3}
+  m_worldName: 
+  MS_hover_clip: {fileID: 8300000, guid: a18e07ebe3b875a44bc4652a7c83b5bb, type: 3}
+  MS_click_clip: {fileID: 8300000, guid: 38fcca9b08408f7489393580aec9ecf4, type: 3}
 --- !u!1 &1097673885
 GameObject:
   m_ObjectHideFlags: 0
@@ -1728,6 +1626,9 @@ MonoBehaviour:
   m_hoverImage: {fileID: 21300000, guid: 797b11c790837b94dbef5193307b1861, type: 3}
   m_exitImage: {fileID: 21300000, guid: 3aa9b12e4b46bfa41bd5621bddf236ab, type: 3}
   m_clickImage: {fileID: 21300000, guid: f4cf8c25e8b1b6649b13b98ef66fd3e8, type: 3}
+  m_worldName: 
+  MS_hover_clip: {fileID: 8300000, guid: a18e07ebe3b875a44bc4652a7c83b5bb, type: 3}
+  MS_click_clip: {fileID: 8300000, guid: 38fcca9b08408f7489393580aec9ecf4, type: 3}
 --- !u!1 &1499095338
 GameObject:
   m_ObjectHideFlags: 0
@@ -1819,6 +1720,9 @@ MonoBehaviour:
   m_hoverImage: {fileID: 21300000, guid: 0ea7fcc7e29a54340bef8de419f7f080, type: 3}
   m_exitImage: {fileID: 21300000, guid: 25c1544fde927574aa65700e5dc18137, type: 3}
   m_clickImage: {fileID: 21300000, guid: de9f7d179c4e447409c7a2ef439b957f, type: 3}
+  m_worldName: 
+  MS_hover_clip: {fileID: 8300000, guid: a18e07ebe3b875a44bc4652a7c83b5bb, type: 3}
+  MS_click_clip: {fileID: 8300000, guid: 38fcca9b08408f7489393580aec9ecf4, type: 3}
 --- !u!1 &1512813434
 GameObject:
   m_ObjectHideFlags: 0
@@ -1910,6 +1814,9 @@ MonoBehaviour:
   m_hoverImage: {fileID: 21300000, guid: b07ecbccebdab3d4f8fe63376c6b78be, type: 3}
   m_exitImage: {fileID: 21300000, guid: 4bd7f6a94ca14fc44933b8b3ae77579b, type: 3}
   m_clickImage: {fileID: 21300000, guid: 8912c766641303841b0aa2fc9397a5ad, type: 3}
+  m_worldName: 
+  MS_hover_clip: {fileID: 8300000, guid: a18e07ebe3b875a44bc4652a7c83b5bb, type: 3}
+  MS_click_clip: {fileID: 8300000, guid: 38fcca9b08408f7489393580aec9ecf4, type: 3}
 --- !u!1 &1547233917
 GameObject:
   m_ObjectHideFlags: 0
@@ -2001,6 +1908,9 @@ MonoBehaviour:
   m_hoverImage: {fileID: 21300000, guid: c0675d83e9a0cab449f66e07b538033d, type: 3}
   m_exitImage: {fileID: 21300000, guid: 297d6d7247c1e2b46b31378ab35ef555, type: 3}
   m_clickImage: {fileID: 21300000, guid: fb45adc1c44a07b4daa985f3a19ec37e, type: 3}
+  m_worldName: 
+  MS_hover_clip: {fileID: 8300000, guid: a18e07ebe3b875a44bc4652a7c83b5bb, type: 3}
+  MS_click_clip: {fileID: 8300000, guid: 38fcca9b08408f7489393580aec9ecf4, type: 3}
 --- !u!1 &1734297233
 GameObject:
   m_ObjectHideFlags: 0
@@ -2301,4 +2211,3 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 2014596073}
   - {fileID: 843850643}
-  - {fileID: 662082759}

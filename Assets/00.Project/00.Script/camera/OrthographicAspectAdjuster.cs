@@ -2,6 +2,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Camera))]
+[RequireComponent(typeof(AudioListener))]
 public class OrthographicAspectAdjuster : MonoBehaviour
 {
     private const float TargetWidth = 1920f;
