@@ -192,6 +192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d114fe1208044a409fb23cfccb69764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoundManager
+  audioSourcePrefab: {fileID: 1482519773020126496, guid: bd6ee8a86c989a5498815e00f54647ca, type: 3}
 --- !u!4 &545885517
 Transform:
   m_ObjectHideFlags: 0
@@ -877,6 +878,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6866443510874415632, guid: b8a08f3935adb234ea1873d0a5ab4a3f, type: 3}
+      propertyPath: 'basefirestores.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 631b2fb0ca3687b4ea1e86440370a858, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

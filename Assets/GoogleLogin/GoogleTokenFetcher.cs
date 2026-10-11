@@ -22,20 +22,16 @@ public class GoogleTokenFetcher : MonoBehaviour
     [Tooltip("로그인 버튼")]
     public Button m_btn;
 
- 
-
     private const int LocalPort = 7123;
     private FirebaseAuth auth;
-   
+    private bool isProcessing = false; // [추가] 중복 실행 방지 플래그
+
     private void Start()
     {
         var keydata = googleSheetManager.Instance.GetClassData<SecurityKey>();
         webClientId = keydata.FindById("0").key;
         webClientSecret = keydata.FindById("1").key;
         auth = FirebaseAuth.DefaultInstance;
-
-        // 시작 시 로딩 UI 비활성화
-      
 
         if (m_btn != null)
         {
@@ -46,24 +42,45 @@ public class GoogleTokenFetcher : MonoBehaviour
     [ContextMenu("Get Google Token & Firebase Auth Test")]
     public async void GetGoogleToken()
     {
-       
-      
+        // 1. 이미 연산 처리 중이라면 즉시 리턴
+        if (isProcessing) return;
 
-        Debug.Log("1. 구글 로그인 웹 브라우저를 엽니다...");
-
-        TokenResponse tokenData = await FetchTokenFromGoogleAsync();
-
-        if (tokenData != null && !string.IsNullOrEmpty(tokenData.id_token))
+        // 2. 상태 처리 및 버튼 비활성화
+        isProcessing = true;
+        if (m_btn != null)
         {
-            Debug.Log("<color=green><b>[구글 토큰 발급 성공!]</b></color>");
-        
-
-            await SignInWithFirebaseAsync(tokenData.id_token, tokenData.access_token);
+            m_btn.interactable = false;
         }
-        else
+
+        try
         {
-            Debug.LogError("구글 토큰 발급 실패");
-        
+            Debug.Log("1. 구글 로그인 웹 브라우저를 엽니다...");
+
+            TokenResponse tokenData = await FetchTokenFromGoogleAsync();
+
+            if (tokenData != null && !string.IsNullOrEmpty(tokenData.id_token))
+            {
+                Debug.Log("<color=green><b>[구글 토큰 발급 성공!]</b></color>");
+                await SignInWithFirebaseAsync(tokenData.id_token, tokenData.access_token);
+            }
+            else
+            {
+                Debug.LogError("구글 토큰 발급 실패");
+            }
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError($"[GetGoogleToken 처리 중 예외 발생] {ex.Message}");
+        }
+        finally
+        {
+            // 3. 성공, 실패, 예외가 터지더라도 작업 완료 후 버튼 복구
+            isProcessing = false;
+
+            if (m_btn != null)
+            {
+                m_btn.interactable = true;
+            }
         }
     }
 
@@ -211,11 +228,8 @@ public class GoogleTokenFetcher : MonoBehaviour
         catch (Exception ex)
         {
             Debug.LogError($"[Firebase 로그인 실패] {ex.Message}");
-          
         }
     }
-
-   
 
     [Serializable]
     public class TokenResponse
