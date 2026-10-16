@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/00.Project/01.Scenes/StartScene/04_Charator_Select.unity
     guid: 2dc02785a4b491b4795a2fef1228b1c1
+  - enabled: 1
+    path: Assets/00.Project/01.Scenes/StartScene/05_Charator_generator.unity
+    guid: 3c9daa228e93f594a8b6d614c8010949
+  - enabled: 1
+    path: Assets/00.Project/01.Scenes/StartScene/06_Charator_generator2.unity
+    guid: 1aaf102d44ad95745b57b60cf0892091
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

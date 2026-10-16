@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 368217}
   - component: {fileID: 368219}
   m_Layer: 5
-  m_Name: "\uC720\uB2C8\uC628"
+  m_Name: Union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -226,7 +226,7 @@ GameObject:
   - component: {fileID: 288003197}
   - component: {fileID: 288003199}
   m_Layer: 5
-  m_Name: "\uB178\uBC14"
+  m_Name: Arcane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -320,7 +320,7 @@ GameObject:
   - component: {fileID: 351781270}
   - component: {fileID: 351781272}
   m_Layer: 5
-  m_Name: "\uBCA0\uB77C"
+  m_Name: Bera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -414,7 +414,7 @@ GameObject:
   - component: {fileID: 460715818}
   - component: {fileID: 460715820}
   m_Layer: 5
-  m_Name: "\uD06C\uB85C\uC544"
+  m_Name: Croa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -681,7 +681,7 @@ GameObject:
   - component: {fileID: 535258547}
   - component: {fileID: 535258549}
   m_Layer: 5
-  m_Name: "\uC774\uB178\uC2DC\uC2A4"
+  m_Name: Innosys
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -775,7 +775,7 @@ GameObject:
   - component: {fileID: 546289815}
   - component: {fileID: 546289817}
   m_Layer: 5
-  m_Name: "\uC2A4\uCE74\uB2C8\uC544"
+  m_Name: Scania
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1032,7 +1032,7 @@ GameObject:
   - component: {fileID: 857608261}
   - component: {fileID: 857608263}
   m_Layer: 5
-  m_Name: "\uC5D0\uC624\uC2A4"
+  m_Name: Eos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1126,7 +1126,7 @@ GameObject:
   - component: {fileID: 942413794}
   - component: {fileID: 942413796}
   m_Layer: 5
-  m_Name: "\uB8E8\uB098"
+  m_Name: Luna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1295,7 +1295,7 @@ GameObject:
   - component: {fileID: 1058788124}
   - component: {fileID: 1058788126}
   m_Layer: 5
-  m_Name: "\uC81C\uB2C8\uC2A4"
+  m_Name: Zenith
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1548,7 +1548,7 @@ GameObject:
   - component: {fileID: 1449235116}
   - component: {fileID: 1449235118}
   m_Layer: 5
-  m_Name: "\uC624\uB85C\uB77C"
+  m_Name: Aurora
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1642,7 +1642,7 @@ GameObject:
   - component: {fileID: 1499095340}
   - component: {fileID: 1499095342}
   m_Layer: 5
-  m_Name: "\uD5EC\uB9AC\uC624\uC2A4"
+  m_Name: Helios
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1736,7 +1736,7 @@ GameObject:
   - component: {fileID: 1512813436}
   - component: {fileID: 1512813438}
   m_Layer: 5
-  m_Name: "\uC5D8\uB9AC\uC2DC\uC6C0"
+  m_Name: Elysium
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1830,7 +1830,7 @@ GameObject:
   - component: {fileID: 1547233919}
   - component: {fileID: 1547233921}
   m_Layer: 5
-  m_Name: "\uB808\uB4DC"
+  m_Name: Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
